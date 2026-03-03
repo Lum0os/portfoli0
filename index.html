@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loay Salem | Penetration Tester</title>
+    <meta name="description"
+        content="Portfolio of Loay Hany Mohamed Salem, a third-year Cybersecurity student and Penetration Tester.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="matrix-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <span class="prompt">root@loay:</span><span class="cursor">_</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#projects" class="nav-item">Projects/Labs</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero fade-in">
+            <div class="hero-content">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="btn close"></span>
+                        <span class="btn minimize"></span>
+                        <span class="btn expand"></span>
+                    </div>
+                    <div class="terminal-body" id="hero-terminal">
+                    </div>
+                </div>
+                <div class="hero-text-content">
+                    <h1 class="glitch" data-text="Loay Salem">Loay Salem</h1>
+                    <h2 class="subtitle">Penetration Tester & Cybersecurity Student</h2>
+                    <p class="hero-desc">Securing networks through offensive security, ethical hacking, and
+                        vulnerability research.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn-primary">View My Work</a>
+                        <a href="#contact" class="btn-secondary">Initiate Contact</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section-padding hidden">
+            <div class="container">
+                <h2 class="section-title"><span class="highlight">//</span> 01. About Me</h2>
+                <div class="about-grid">
+                    <div class="about-image-container glass-panel">
+                        <img src="profile.png" alt="Loay Salem" class="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+
+                    <div class="about-details">
+                        <div class="about-text glass-panel">
+                            <p>Motivated third-year Cybersecurity student with a strong foundation in network security,
+                                ethical hacking, and digital forensics.</p>
+                            <p>Experienced in penetration testing through hands-on labs on PortSwigger and TryHackMe,
+                                with practical exposure to real-world vulnerabilities and exploitation techniques.</p>
+                            <p>Skilled in bug hunting methodologies, including reconnaissance, vulnerability
+                                identification, and reporting. Well-versed in the OWASP Top 10 and common web
+                                application attack vectors.</p>
+                            <p>Actively seeking internship or entry-level opportunities to apply technical skills and
+                                develop deeper real-world security experience.</p>
+                        </div>
+                        <div class="about-stats glass-panel">
+                            <div class="stat-item">
+                                <i class="fas fa-shield-alt icon-glow"></i>
+                                <h3>Focus</h3>
+                                <p>Offensive Security</p>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-bug icon-glow"></i>
+                                <h3>Methodology</h3>
+                                <p>Bug Hunting & VAPT</p>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-university icon-glow"></i>
+                                <h3>Education</h3>
+                                <p>3rd Year Cybersecurity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding hidden">
+            <div class="container">
+                <h2 class="section-title"><span class="highlight">//</span> 02. Technical Arsenal</h2>
+                <div class="skills-container">
+
+                    <div class="skill-category glass-panel">
+                        <h3 class="category-title"><i class="fas fa-server"></i> Core Concepts</h3>
+                        <ul class="skill-list">
+                            <li>Network Security</li>
+                            <li>Ethical Hacking</li>
+                            <li>Digital Forensics</li>
+                            <li>OWASP Top 10</li>
+                            <li>Web App Vulnerabilities</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-panel">
+                        <h3 class="category-title"><i class="fas fa-tools"></i> Tools & Tech</h3>
+                        <ul class="skill-list">
+                            <li>Burp Suite</li>
+                            <li>Nmap</li>
+                            <li>Wireshark</li>
+                            <li>Linux</li>
+                            <li>Bash / Scripting</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-panel">
+                        <h3 class="category-title"><i class="fas fa-laptop-code"></i> Platforms</h3>
+                        <ul class="skill-list">
+                            <li>TryHackMe</li>
+                            <li>PortSwigger Academy</li>
+                            <li>VirtualBox / VMware</li>
+                            <li>Kali Linux / Parrot OS</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section-padding hidden">
+            <div class="container">
+                <h2 class="section-title"><span class="highlight">//</span> 03. Projects & Labs</h2>
+                <p class="section-subtitle">Real-world applications and deep-dive laboratory environments.</p>
+
+                <div class="project-grid">
+
+                    <!-- University Project 1 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-header">
+                            <div class="folder-icon"><i class="far fa-folder-open"></i></div>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Network Defense Automation Script</h3>
+                        <p class="project-desc">A university project focused on automating firewall configurations and
+                            monitoring basic network traffic to drop malicious packets based on specific signatures.</p>
+                        <ul class="project-tech">
+                            <li>Bash</li>
+                            <li>iptables</li>
+                            <li>Linux</li>
+                        </ul>
+                    </div>
+
+                    <!-- University Project 2 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-header">
+                            <div class="folder-icon"><i class="far fa-folder-open"></i></div>
+                            <div class="project-links">
+                                <a href="#" aria-label="Project Details"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Secure Web Application Architecture</h3>
+                        <p class="project-desc">Designed and documented a secure architecture for a typical e-commerce
+                            platform, implementing OWASP mitigations for SQLi, XSS, and CSRF as part of a class
+                            assignment.</p>
+                        <ul class="project-tech">
+                            <li>OWASP Top 10</li>
+                            <li>Threat Modeling</li>
+                            <li>Documentation</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card glass-panel highlight-card">
+                        <div class="project-header">
+                            <div class="folder-icon"><i class="fas fa-flask"></i></div>
+                            <div class="project-links">
+                                <a href="https://portswigger.net/users/youraccount/personaldetails" target="_blank"
+                                    aria-label="PortSwigger"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Web Security Academy Labs</h3>
+                        <p class="project-desc">Extensive hands-on practice resolving vulnerabilities in complex web
+                            environments setup by PortSwigger. Covering advanced injection, auth bypass, and business
+                            logic flaws.</p>
+                        <ul class="project-tech">
+                            <li>Burp Suite Pro</li>
+                            <li>Web Exploitation</li>
+                        </ul>
+                    </div>
+
+                    <!-- TryHackMe Example -->
+                    <div class="project-card glass-panel highlight-card">
+                        <div class="project-header">
+                            <div class="folder-icon"><i class="fas fa-cube"></i></div>
+                            <div class="project-links">
+                                <a href="https://tryhackme.com/p/mandour948" target="_blank" aria-label="TryHackMe"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">TryHackMe Penetration Testing</h3>
+                        <p class="project-desc">Completed various learning paths encompassing network reconnaissance,
+                            active directory exploitation, and privilege escalation techniques within isolated VPN
+                            environments.</p>
+                        <ul class="project-tech">
+                            <li>Nmap</li>
+                            <li>Metasploit</li>
+                            <li>PrivEsc</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-padding hidden">
+            <div class="container">
+                <div class="contact-content glass-panel">
+                    <h2 class="section-title"><span class="highlight">//</span> 04. What's Next?</h2>
+                    <h3 class="contact-cta">Get In Touch</h3>
+                    <p class="contact-text">Currently seeking entry-level roles or internship opportunities to apply my
+                        penetration testing and ethical hacking skills in a real-world environment. My inbox is always
+                        open.</p>
+
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/loay-salem-4b3886334" target="_blank" class="contact-btn">
+                            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                        </a>
+                        <a href="mailto:loayhany327@gmail.com" class="contact-btn outline">
+                            <i class="fas fa-envelope"></i> Send an Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Designed & Built by <span class="highlight">Loay Salem</span></p>
+            <div class="terminal-footer">
+                <span>> connection closed.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
